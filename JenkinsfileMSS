@@ -1,9 +1,7 @@
 node
 {
      def mavenHome = tool name: "Maven 3.6.3"
-     /*
-     properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '2', daysToKeepStr: '', numToKeepStr: '2')), pipelineTriggers([cron('* * * * *')])])
-     */
+     
      echo "GitHub BranhName ${env.BRANCH_NAME}"
     echo "Jenkins Job Number ${env.BUILD_NUMBER}"
     echo "Jenkins Node Name ${env.NODE_NAME}"
